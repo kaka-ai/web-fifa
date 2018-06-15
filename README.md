@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/kaka-ai/web-fifa/branch/master/graph/badge.svg)](https://codecov.io/gh/kaka-ai/web-fifa)
 [![dependencies Status](https://david-dm.org/kaka-ai/web-fifa/status.svg)](https://david-dm.org/kaka-ai/web-fifa)
 [![devDependencies Status](https://david-dm.org/kaka-ai/web-fifa/dev-status.svg)](https://david-dm.org/kaka-ai/web-fifa?type=dev)
-[![](https://images.microbadger.com/badges/image/kaka-ai/web-fifa.svg)](https://microbadger.com/images/kaka-ai/web-fifa)
+[![](https://images.microbadger.com/badges/image/aikaka/web-fifa.svg)](https://microbadger.com/images/aikaka/web-fifa)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kaka-ai/web-fifa/blob/master/LICENSE)
 
 ## Installation

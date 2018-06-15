@@ -14,6 +14,9 @@ export default {
   mutations: {
     getMatches (state, {matches}) {
       state.matches = matches
+    },
+    getMatchesToday (state, {matches}) {
+      state.matches = matches
     }
   },
   actions: {
@@ -21,6 +24,14 @@ export default {
       let url = serverService.getMatchesEndpoint()
       axios.get(url).then(response => {
         context.commit('getMatches', {matches: response.data})
+      }).catch(err => {
+        console.error(err)
+      })
+    },
+    getMatchesToday (context) {
+      let url = serverService.getMatchesTodayEndpoint()
+      axios.get(url).then(response => {
+        context.commit('getMatchesToday', {matches: response.data})
       }).catch(err => {
         console.error(err)
       })

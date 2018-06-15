@@ -33,4 +33,10 @@ describe('ServerService Tests', () => {
     actual = serverService.getFlagEndpoint('vi')
     expect(actual).not.toBeNull()
   })
+
+  it('It should return correct country code', () => {
+    let actual = serverService.justifyCountryCode('RAS')
+    expect(actual).not.toBeNull()
+    expect(actual.length).toEqual(2)
+  })
 })

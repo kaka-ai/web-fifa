@@ -18,11 +18,11 @@ class ServerService {
     return `${this.getEndpoint()}/matches/today`
   }
   getFlagEndpoint (countryCode) {
-    countryCode = countryCode.substring(0, 2)
-    if (countryCode === 'KS') {
-      countryCode = 'SA'
-    }
+    countryCode = this.justifyCountryCode(countryCode)
     return `http://www.countryflags.io/${countryCode}/shiny/64.png`
+  }
+  justifyCountryCode (code) {
+    return code
   }
 }
 
