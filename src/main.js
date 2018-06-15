@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import store from './store'
 import filter from './filter'
+import Delay from 'vue-delay'
+
+Vue.use(Delay)
 
 Vue.use(filter)
 

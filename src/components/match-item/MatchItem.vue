@@ -4,21 +4,26 @@
       <div class="card">
         <div class="card-body row">
           <div class="col-5 text-right">
-            <span>{{homeTeam.country}}</span>
+            <span class="h5 mr-1">{{homeTeam.country}}</span>
             <button type="button" class="btn bmd-btn-fab">
               <img class="flag btn-raised" :src="getFlagUrl(homeTeam.country)" alt="Flag"/>
             </button>
           </div>
           <div class="col-2 text-center pt-3 h5">
-            <span>{{homeTeam.goals}}</span>
-            <span>-</span>
-            <span>{{awayTeam.goals}}</span>
+           <div v-if="status == 'completed'">
+              <span>{{homeTeam.goals}}</span>
+              <span>-</span>
+              <span>{{awayTeam.goals}}</span>
+           </div>
+           <div v-else>
+              <span>{{datetime | date}}</span>
+           </div>
           </div>
           <div class="col-5">
             <button type="button" class="btn bmd-btn-fab">
             <img class="flag" :src="getFlagUrl(awayTeam.country)" alt="Flag"/>
             </button>
-            <span>{{awayTeam.country}}</span>
+            <span class="h5 ml-1">{{awayTeam.country}}</span>
           </div>
         </div>
       </div>
@@ -61,11 +66,7 @@ export default {
 </script>
 
 <style scoped>
-span {
-  font-size: 1.2em;
-  margin-left: 5px;
-  margin-right: 5px;
-}
+
 .flag {
   margin-top: 4px;
   margin-bottom: 4px;

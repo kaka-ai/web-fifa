@@ -1,11 +1,14 @@
 <template>
-  <div class="m-home row justify-content-center">
-    <MatchItem class="pb-2" v-for="(item, index) in matches"
-    :key="index" v-show="item.home_team.code != 'TBD'"
-    :status="item.status"
-    :datetime="item.datetime"
-    :homeTeam="item.home_team"
-    :awayTeam="item.away_team"/>
+  <div class="m-home">
+     <delay class="row justify-content-center" v-for="(item, index) in matches"
+      :key="index"
+      :wait="(index + 1) * 0.6 * 1000">
+      <MatchItem class="pb-2 animated fadeInUp" v-show="item.home_team.code != 'TBD'"
+      :status="item.status"
+      :datetime="item.datetime"
+      :homeTeam="item.home_team"
+      :awayTeam="item.away_team"/>
+    </delay>
   </div>
 </template>
 
@@ -21,7 +24,7 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('match/getMatches')
+    this.$store.dispatch('match/getMatchesToday')
   },
   computed: {
     matches () {
