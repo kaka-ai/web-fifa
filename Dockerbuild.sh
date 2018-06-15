@@ -1,2 +1,2 @@
-docker build -t jsboilerplates/web-fifa .
-docker tag  jsboilerplates/web-fifa jsboilerplates/web-fifa:0.1.0
+docker build -t aikaka/web-fifa .
+docker tag  aikaka/web-fifa aikaka/web-fifa:0.1.0
