@@ -1,9 +1,9 @@
 import Vue from 'vue'
-import Footer from './Footer'
+import MatchItem from './MatchItem'
 
-describe('Footer.vue', () => {
+describe('MatchItem.vue', () => {
   it('should render correct contents', () => {
-    const Constructor = Vue.extend(Footer)
+    const Constructor = Vue.extend(MatchItem)
     const vm = new Constructor().$mount()
     expect(vm).not.toBeNull()
   })

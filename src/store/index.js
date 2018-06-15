@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import MessageModule from './MessageModule'
+import MatchModule from './MatchModule'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    message: MessageModule
+    match: MatchModule
   },
   state: {
   },

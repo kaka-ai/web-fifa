@@ -1,6 +1,5 @@
 <template>
   <div class="m-navbar">
-    <h1>Navbar</h1>
   </div>
 </template>
 

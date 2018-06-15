@@ -1,2 +1,2 @@
-docker build -t jsboilerplates/web-vuejs .
-docker tag  jsboilerplates/web-vuejs jsboilerplates/web-vuejs:0.1.0
+docker build -t jsboilerplates/web-fifa .
+docker tag  jsboilerplates/web-fifa jsboilerplates/web-fifa:0.1.0

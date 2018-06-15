@@ -24,6 +24,7 @@ module.exports = {
     '!src/router/index.js',
     '!**/node_modules/**',
     '!**/App.vue',
-    '!**/filter/index.js'
+    '!**/filter/index.js',
+    '!src/store/**'
   ]
 }

@@ -1,27 +1,26 @@
 <template>
-  <div class="m-home">
-    <h1>Home Page</h1>
-    <ul>
-      <li v-for="(item, index) in messages" :key="index">
-        {{item}}
-      </li>
-    </ul>
+  <div class="m-home row">
+    <MatchItem/>
   </div>
 </template>
 
 <script>
+import MatchItem from '@/components/match-item/MatchItem'
 export default {
+  components: {
+    MatchItem
+  },
   name: 'HomePage',
   data () {
     return {
     }
   },
   created () {
-    this.$store.dispatch('message/getMessages')
+    this.$store.dispatch('match/getMatches')
   },
   computed: {
-    messages () {
-      return this.$store.getters['message/getMessages']
+    matches () {
+      return this.$store.getters['match/getMatches']
     }
   }
 }

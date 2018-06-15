@@ -1,16 +1,10 @@
-# Boilerplate for VueJS Web App
-[![Build Status](https://travis-ci.org/jsboilerplates/web-vuejs.svg?branch=master)](https://travis-ci.org/jsboilerplates/web-vuejs)
-[![codecov](https://codecov.io/gh/jsboilerplates/web-vuejs/branch/master/graph/badge.svg)](https://codecov.io/gh/jsboilerplates/web-vuejs)
-[![dependencies Status](https://david-dm.org/jsboilerplates/web-vuejs/status.svg)](https://david-dm.org/jsboilerplates/web-vuejs)
-[![devDependencies Status](https://david-dm.org/jsboilerplates/web-vuejs/dev-status.svg)](https://david-dm.org/jsboilerplates/web-vuejs?type=dev)
-[![](https://images.microbadger.com/badges/image/jsboilerplates/web-vuejs.svg)](https://microbadger.com/images/jsboilerplates/web-vuejs)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsboilerplates/web-vuejs/blob/master/LICENSE)
-
-## Features
-- VueJS 2, Vue Router 3, Vuex 3
-- Unit Test with Jest and Vue Test Utils
-- ES6, ESLint
-- CI with Travis, Docker Build
+# FIFA World Cup Website
+[![Build Status](https://travis-ci.org/jsboilerplates/web-fifa.svg?branch=master)](https://travis-ci.org/jsboilerplates/web-fifa)
+[![codecov](https://codecov.io/gh/jsboilerplates/web-fifa/branch/master/graph/badge.svg)](https://codecov.io/gh/jsboilerplates/web-fifa)
+[![dependencies Status](https://david-dm.org/jsboilerplates/web-fifa/status.svg)](https://david-dm.org/jsboilerplates/web-fifa)
+[![devDependencies Status](https://david-dm.org/jsboilerplates/web-fifa/dev-status.svg)](https://david-dm.org/jsboilerplates/web-fifa?type=dev)
+[![](https://images.microbadger.com/badges/image/jsboilerplates/web-fifa.svg)](https://microbadger.com/images/jsboilerplates/web-fifa)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsboilerplates/web-fifa/blob/master/LICENSE)
 
 ## Installation
 
@@ -53,7 +47,7 @@ bash Dockerbuild.sh
 Run docker container
 
 ```
-docker run -d --name webvuejs -p 8000:8000 jsboilerplates/web-vuejs
+docker run -d --name web-fifa -p 8000:8000 jsboilerplates/web-fifa
 ```
 
 ## Contributing
@@ -62,7 +56,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/jsboilerplates/web-vuejs/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/jsboilerplates/web-fifa/tags).
 
 ## License
 
