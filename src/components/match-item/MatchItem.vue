@@ -18,7 +18,7 @@
               </div>
            </div>
            <div v-else>
-              <span>{{datetime | date(':')}}</span>
+              <span>{{datetime | date(' : ')}}</span>
            </div>
           </div>
           <div class="col-5">
@@ -37,7 +37,7 @@
             </button><br>
             <span class="h5 mr-1">{{homeTeam.country}}</span>
           </div>
-          <div class="col-2 text-center pt-3 h5">
+          <div class="col-2 text-center pt-4 h5">
            <div v-if="status == 'completed'">
               <div>
                 <span>{{homeTeam.goals}}</span>
@@ -45,7 +45,7 @@
               </div>
            </div>
            <div v-else>
-              <span>{{datetime | date}}</span>
+              <span>{{datetime | date(' ')}}</span>
            </div>
           </div>
           <div class="col-5">

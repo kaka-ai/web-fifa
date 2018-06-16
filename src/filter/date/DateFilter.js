@@ -1,5 +1,5 @@
 import moment from 'moment'
 
 export default (input, seperator = '') => {
-  return moment(input).utc().add(1, 'hours').format(`HH ${seperator} mm`)
+  return moment(input, 'yyyy-MM-DDTHH:mm:ssZ').utc().add(1, 'hours').format(`HH${seperator}mm`)
 }
