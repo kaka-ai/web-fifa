@@ -4,7 +4,7 @@
       <div class="card d-none d-sm-block">
         <div class="card-body row">
           <div class="col-5 text-right">
-            <span class="h5 mr-1">{{homeTeam.country}}</span>
+            <span class="h5 mr-1">{{homeTeam.country | country}}</span>
             <button type="button" class="btn bmd-btn-fab">
               <img class="flag btn-raised" :src="getFlagUrl(homeTeam.country)" alt="Flag"/>
             </button>
@@ -25,7 +25,7 @@
             <button type="button" class="btn bmd-btn-fab">
             <img class="flag" :src="getFlagUrl(awayTeam.country)" alt="Flag"/>
             </button>
-            <span class="h5 ml-1">{{awayTeam.country}}</span>
+            <span class="h5 ml-1">{{awayTeam.country | country}}</span>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@
             <button type="button" class="btn bmd-btn-fab">
               <img class="flag btn-raised" :src="getFlagUrl(homeTeam.country)" alt="Flag"/>
             </button><br>
-            <span class="h5 mr-1">{{homeTeam.country}}</span>
+            <span class="h5 mr-1">{{homeTeam.country | country}}</span>
           </div>
           <div class="col-2 text-center pt-4 h5">
            <div v-if="status == 'completed'">
@@ -52,7 +52,7 @@
             <button type="button" class="btn bmd-btn-fab">
             <img class="flag" :src="getFlagUrl(awayTeam.country)" alt="Flag"/>
             </button><br>
-            <span class="h5 ml-1">{{awayTeam.country}}</span>
+            <span class="h5 ml-1">{{awayTeam.country | country}}</span>
           </div>
         </div>
       </div>

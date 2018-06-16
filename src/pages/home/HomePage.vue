@@ -7,7 +7,7 @@
     </div>
      <delay class="row justify-content-center" v-for="(item, index) in matches"
       :key="index"
-      :wait="(index + 1) * 0.4 * 1000">
+      :wait="(index + 1) * 200">
       <MatchItem class="pb-2 animated fadeInUp" v-show="item.home_team.code != 'TBD'"
       :status="item.status"
       :datetime="item.datetime"
