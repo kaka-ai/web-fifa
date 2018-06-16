@@ -27,6 +27,7 @@ script:
 after_success:
   - npm run build
   - bash Dockerbuild.sh
+  - cp 404.html dist/
 
 deploy:
   local-dir: dist
