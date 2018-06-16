@@ -1,7 +1,7 @@
 <template>
   <div class="m-match">
     <div class="col-sm-12 col-md-12">
-      <div class="card">
+      <div class="card d-none d-sm-block">
         <div class="card-body row">
           <div class="col-5 text-right">
             <span class="h5 mr-1">{{homeTeam.country}}</span>
@@ -11,9 +11,38 @@
           </div>
           <div class="col-2 text-center pt-3 h5">
            <div v-if="status == 'completed'">
-              <span>{{homeTeam.goals}}</span>
-              <span>-</span>
-              <span>{{awayTeam.goals}}</span>
+              <div>
+                <span>{{homeTeam.goals}}</span>
+                <span>-</span>
+                <span>{{awayTeam.goals}}</span>
+              </div>
+           </div>
+           <div v-else>
+              <span>{{datetime | date(':')}}</span>
+           </div>
+          </div>
+          <div class="col-5">
+            <button type="button" class="btn bmd-btn-fab">
+            <img class="flag" :src="getFlagUrl(awayTeam.country)" alt="Flag"/>
+            </button>
+            <span class="h5 ml-1">{{awayTeam.country}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="card d-block d-sm-none">
+        <div class="card-body row">
+          <div class="col-5 text-right">
+            <button type="button" class="btn bmd-btn-fab">
+              <img class="flag btn-raised" :src="getFlagUrl(homeTeam.country)" alt="Flag"/>
+            </button><br>
+            <span class="h5 mr-1">{{homeTeam.country}}</span>
+          </div>
+          <div class="col-2 text-center pt-3 h5">
+           <div v-if="status == 'completed'">
+              <div>
+                <span>{{homeTeam.goals}}</span>
+                <span>{{awayTeam.goals}}</span>
+              </div>
            </div>
            <div v-else>
               <span>{{datetime | date}}</span>
@@ -22,7 +51,7 @@
           <div class="col-5">
             <button type="button" class="btn bmd-btn-fab">
             <img class="flag" :src="getFlagUrl(awayTeam.country)" alt="Flag"/>
-            </button>
+            </button><br>
             <span class="h5 ml-1">{{awayTeam.country}}</span>
           </div>
         </div>

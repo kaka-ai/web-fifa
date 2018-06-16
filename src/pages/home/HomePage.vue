@@ -2,12 +2,12 @@
   <div class="m-home">
     <div class="row">
       <div class="col text-center">
-        <h1 class="text-muted text-uppercase">Match Tonight</h1>
+        <h1 class="text-muted text-uppercase">Matches</h1>
       </div>
     </div>
      <delay class="row justify-content-center" v-for="(item, index) in matches"
       :key="index"
-      :wait="(index + 1) * 0.6 * 1000">
+      :wait="(index + 1) * 0.4 * 1000">
       <MatchItem class="pb-2 animated fadeInUp" v-show="item.home_team.code != 'TBD'"
       :status="item.status"
       :datetime="item.datetime"
@@ -29,7 +29,7 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('match/getMatchesToday')
+    this.$store.dispatch('match/getMatches')
   },
   computed: {
     matches () {
